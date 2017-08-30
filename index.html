@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test-verstka</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<script type="text/javascript" src="js/size_buttons.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
+</head>
+<body>
+	<div class="main-container">
+		<div class="background-picture">
+			<div class="img-overlay">
+				<div class="upper-side">		
+					<div class="flex-container">
+						<div class="logotype">
+							<img src="img/logo1.png" alt="Логотип" title="Woodcutter">
+							<span>логотип</span>
+						</div>
+						<div class="menu-container">
+							<div class="menu">
+								<ul>
+									<li>Главная</li>
+									<li>Магазин</li>
+									<li>Бренды</li>
+									<li>О магазине</li>
+									<li>Контакты</li>
+								</ul>
+							</div>
+							<div class="trash">(0) Корзина</div>
+						</div>
+					</div>
+					<div class="collection">коллекция сезона</div>
+					<div class="collection-name">брутальный дровосек</div>
+					<div class="button-details-wrap">
+						<input type="submit" name="details" value="подробнее" class="button-details">
+					</div>
+					<div class="pagination">
+						<a href="#"><img src="img/ring.png" alt="firt-page" onclick="chgImg(1)"></a>
+						<a href="#"><img src="img/circle.png" alt="second-page" onclick="chgImg(2)"></a>
+						<a href="#"><img src="img/circle.png" alt="third-page" onclick="chgImg(3)"></a>
+						<a href="#"><img src="img/circle.png" alt="four-page" onclick="chgImg(4)"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="middle-side-background">
+			<div class="middle-side">
+				<hr color="red" width="113" size="3">
+				<span class="item-name">Лучшая модель</span>
+				<hr color="red" width="113" size="3">
+				<div class="item-description">
+					<div class="picture">
+							<img id="ax-m" src="img/ax-m.png" alt="ax M size">
+							<img id="ax-l" src="img/ax-l.png" alt="ax L size">
+							<img id="ax-xl" src="img/ax-xl.png" alt="ax XL size">
+							<img id="ax-xxl" src="img/ax-xxl.png" alt="ax XXL size">
+					</div>
+					<div class="description">
+						<h3>топор обыкновенный</h3>
+						<p>Коллекция: лето/зима</p>
+						<p>Материал: корозионностойкая дамасская сталь</p>
+						<hr color="black" width="30" size="0">
+						<p>Обыкновенный топор, облажающий, как хозяйственными качествами, так и оружейными. Может активно применяться в различных жизненных ситуациях.</p>
+						<p>Упакован в деревянный футляр, обитый внутри бархатом.</p>
+						<div class="item-description-pagination">
+							<a href="/" onClick="return false" id="ax-m-but">m</a>
+							<a href="/" onClick="return false" id="ax-l-but">l</a>
+							<a href="/" onClick="return false" id="ax-xl-but">xl</a>
+							<a href="/" onClick="return false" id="ax-xxl-but">xxl</a>
+							<a href="/" onClick="return false" class="buy">купить</a>
+						</div>
+					</div>
+				</div>
+				<div class="item-comments">
+					<div class="item-comments-photo">
+						<img src="img/user-photo.png" alt="user photo">
+					</div>
+					<div class="item-comments-message-field">
+						<img src="img/mes-field-1.png" alt="user photo">
+						<img src="img/mes-field-2.png" alt="user photo">
+						<img src="img/mes-field-3.png" alt="user photo">
+						<div class="item-comments-message">Очень хороший топор. Брал в подарок для тещи. Пришел действительно в деревянном футляре, но без бархата =)</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="down-side">
+			<span>Сайт-Мастер</span>
+		</div>
+	</div>
+</body>
+</html>
