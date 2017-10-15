@@ -1,0 +1,21 @@
+{
+  "name": "v3",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "IlyaRedkin <ilyaredkin@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^7.0.0",
+    "swiper": "^4.0.1"
+  }
+}

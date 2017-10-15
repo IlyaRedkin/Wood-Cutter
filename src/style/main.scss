@@ -1,0 +1,66 @@
+@import "../../bower_components/normalize-css/normalize.css";
+@import "../../bower_components/swiper/dist/css/swiper.min.css";
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  max-width: 1530px;
+  margin: 0 auto;
+}
+
+.container{
+  flex-basis: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.swiper-container {
+  width: 100%;
+  min-height: 750px;
+  height: 1px;
+}
+
+.swiper-pagination{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 79px;
+  margin: auto;
+  width: 80px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets{
+  display: flex;
+  justify-content: center;
+  width: 10%;
+}
+
+.swiper-pagination-bullet{
+
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: white;
+  border: none;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+@import "partials/header";
+@import "partials/features";
+@import "partials/comments";
+@import "partials/footer";

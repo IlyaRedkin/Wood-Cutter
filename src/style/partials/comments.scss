@@ -1,0 +1,32 @@
+/*comments*/
+.comments{
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+
+.comments-wrap{
+  width: 570px;
+  padding-top: 54px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comments__photo{
+  flex-shrink: 1;
+  flex-basis: 170px;
+}
+
+.comments__text-field{
+  flex-basis: 371px;
+  background: url('../img/comment-field.png') no-repeat 0px 0px;
+}
+
+.comments__text{
+  font-size: 16px;
+  color: #666666;
+  line-height: 24px;
+  vertical-align: 4px;
+  margin-right: 0px;
+}

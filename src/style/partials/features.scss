@@ -1,0 +1,189 @@
+/*features*/
+.features{
+  background-color: #f3f3f3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.title__hr{
+  border: none; /* Убираем границу для браузера Firefox */
+  color: red; /* Цвет линии для остальных браузеров */
+  background-color: red; /* Цвет линии для браузера Firefox и Opera */
+  height: 2px; /* Толщина линии */
+  width: 115px;
+}
+
+.features__feature-hr{
+  width: 30px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+}
+
+.features__feature-hr hr{
+  border: none;
+  color: black; /* Цвет линии для остальных браузеров */
+  background-color: black; /* Цвет линии для браузера Firefox и Opera */
+  height: 1px; /* Толщина линии */
+  width: 30px;
+}
+
+.features__size-input,
+.slider__input{
+  display: none;
+}
+
+.features__title{
+  flex-basis: 100%;
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
+.features__title h2{
+  font-size: 40px;
+  font-style: italic;
+  color: #333333;
+  line-height: 19px;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+.features__view,
+.features__description{
+  flex-basis: 570px;
+}
+
+.features__view{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.absolute{
+  position: absolute;
+  width: 570px;
+  left: 51%;
+  bottom: 110px;
+  display: flex;
+}
+
+.features__feature-title{
+  font-size: 30px;
+  line-height: normal;
+  color: #dc0000;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.features__picture-field{
+  width: 540px;
+  overflow: hidden;
+  background-color: white;
+  height: 570px;
+}
+
+.features__field{
+  flex-basis: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__img-box{
+  margin-top: 17%;
+  width: 500%;
+  display: flex;
+}
+
+.feature__img{
+  display: flex;
+  flex-direction: row;
+  width: 540px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn_m:checked ~ .features__picture-field .feature__img-box .feature__img{
+  transform: translate(0px);
+}
+
+#btn_l:checked ~ .features__picture-field .feature__img-box .feature__img{
+  transform: translate(-540px);
+}
+
+#btn_xl:checked ~ .features__picture-field .feature__img-box .feature__img{
+  transform: translate(-1080px);
+}
+
+#btn_xxl:checked ~ .features__picture-field .feature__img-box .feature__img{
+  transform: translate(-1620px);
+}
+
+.features__description dd{
+  margin: 0;
+}
+
+.features__feature-desc{
+  line-height: 25px;
+  color: #777777;
+  letter-spacing: 0.1em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.features__feature-desc_add{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.btn_size{
+  font-size: 16px;
+  color: #333;
+  border: 1px solid;
+  border-color: #333 #afafaf;
+  width: 70px;
+  height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#btn_m:checked ~ .absolute .features__field .btn_size[for=btn_m],
+#btn_l:checked ~ .absolute .features__field .btn_size[for=btn_l],
+#btn_xl:checked ~ .absolute .features__field .btn_size[for=btn_xl],
+#btn_xxl:checked ~ .absolute .features__field .btn_size[for=btn_xxl],
+.btn_size:hover,
+.btn_order:hover
+{
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.btn_size:active,
+.btn_order:active{
+  background-color: #666;
+  border-color: #666;
+  color: white;
+}
+
+.header__btn::before,
+.btn_size::before,
+.btn_order::before { /* для IE8+ */
+  content: "";
+  display: inline-block;
+  min-height: inherit;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.btn_order{
+  font-size: 16px;
+  color: #333;
+  border: 1px solid;
+  border-color: #333 #afafaf;
+  width: 170px;
+  height: 50px;
+  text-transform: uppercase;
+  text-align: center
+}
