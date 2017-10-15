@@ -52,7 +52,8 @@ var config = {
         baseDir: "./dist"
     },
     host: 'localhost',
-    tunnel: true
+    tunnel: true,
+    port: 3000
 };
 
 gulp.task("webserver", function () {
